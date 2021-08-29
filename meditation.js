@@ -5,12 +5,10 @@ const video = document.querySelector('.bg-video video')
 const music = document.querySelector('.music')
 const play = document.querySelector('.play')
 const pause = document.querySelector('.pause')
-const playBreath = document.querySelector('.play-breath')
-const pauseBreath = document.querySelector('.pause-breath')
 const movingOutline = document.querySelector('.moving-outline circle')
 const trackOutline = document.querySelector('.track-outline-breath circle')
 const text = document.querySelector('.text')
-let duration = 600;
+let duration = 600
 
 function resetChoice(){
   play.classList.remove('hide')
