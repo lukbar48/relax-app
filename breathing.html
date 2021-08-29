@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script defer src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+  <script defer src="https://kit.fontawesome.com/4dcf87b609.js" crossorigin="anonymous"></script>
+  <title>Relax app</title>
+</head>
+
+<body>
+  <div class="app">
+    <nav class="menu">
+      <div class="top-bar">
+        <a class="logo-index" href="/index.html"><img class="logo" src="/svg/relax logo.png" alt=""></a>
+        <a class="nav-choice" href="/meditation.html"><img class="meditation" src="/svg/meditation.png" alt="">
+          Meditation</a>
+        <a class="nav-choice active-btn" href="/breathing.html"><i class="fas fa-lungs"></i> Breathing</a>
+      </div>
+    </nav>
+    <div class="bg-video">
+      <video loop>
+        <source src="/video/water.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <section class="background">
+      <button data-sound="./sounds/wind.mp3" data-video="/video/wind.mp4">
+        <span class="iconify" data-icon="wi:cloudy-gusts" style="color: white;"></span>
+      </button>
+      <button data-sound="./sounds/water.mp3" data-video="/video/water.mp4">
+        <span class="iconify" data-icon="akar-icons:water" style="color: white;"></span>
+      </button>
+      <button data-sound="./sounds/beach.mp3" data-video="/video/beach.mp4">
+        <span class="iconify" data-icon="wi:day-sunny" style="color: white;"></span>
+      </button>
+      <button data-sound="./sounds/rain.mp3" data-video="/video/rain.mp4">
+        <span class="iconify" data-icon="wi:showers" style="color: white;"></span>
+      </button>
+      <button data-sound="./sounds/thunderstorm.mp3" data-video="/video/thunderstorm.mp4">
+        <span class="iconify" data-icon="wi:storm-showers" style="color: white;"></span>
+      </button>
+      <button data-sound="./sounds/fire.mp3" data-video="/video/fire.mp4">
+        <span class="iconify" data-icon="la:fire-alt" style="color: white;" data-width="85" data-height="85"></span>
+      </button>
+    </section>
+    <section class="main main-breathing">
+      <audio class="music" src="/sounds/water.mp3" loop></audio>
+      <div class="breath-cycle-container">
+        <div class="pointer-container">
+          <div class="pointer"></div>
+        </div>
+        <div class="text"></div>
+        <svg class="track-outline-breath" width="453" height="453" viewBox="0 0 453 453" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20" />
+        </svg>
+      </div>
+      <img class="play-breath" src="svg/play.svg" alt="">
+      <div class="text-bottom"></div>
+    </section>
+    <section class="time time-breathing">
+      <button class="threemins mins active-breath" data-breath='calming'>Calming</button>
+      <button class="fivemins mins" data-breath='wim'>Wim Hof</button>
+      <button class="tenmins mins" data-breath='box'>Box breathing</button>
+    </section>
+  </div>
+  <script src="breathing.js"></script>
+
+</body>
+
+</html>
