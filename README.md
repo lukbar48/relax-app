@@ -1,2 +1,2 @@
-# git-praktyka
-Git w praktyce
+# Relax app
+Meditation and breathing exercises application
